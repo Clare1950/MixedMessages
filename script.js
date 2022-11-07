@@ -62,20 +62,96 @@ const seriesFactory = (title, genre, platform, episodes, episodeLength) => {
     },
   };
 };
+//populate books array with books
+let books = [];
+
+books.push(
+  bookFactory(
+    "Slime: A Natural History",
+    "Susanne Wedlich",
+    "Popular Science",
+    272
+  )
+);
 
 
-let book1 = bookFactory(
-  "Slime: A Natural History",
-  "Susanne Wedlich",
-  "Popular Science",
-  272
+//populate podcast array with podcasts
+let podcasts = [];
+podcasts.push(
+  podcastFactory(
+    "The Trojan Horse Affair",
+    "Brain Reed & Hamza Syed",
+    "Spotify",
+    8,
+    50
+  )
 );
-let podcast1 = podcastFactory(
-  "The Trojan Horse Affair",
-  "Brain Reed & Hamza Syed",
-  "Spotify",
-  8,
-  50
+podcasts.push(
+  podcastFactory("The Superhero Complex", "Novel", "Spotify", 10, 52)
 );
-let series1 = seriesFactory("Crossfire", "Drama", "BBC iPLayer", 3, 55);
+podcasts.push(
+  podcastFactory(
+    "Wild Things: Seigfried and Roy",
+    "Stephen Leckhart",
+    "Spotify",
+    8,
+    42
+  )
+);
+podcasts.push(
+  podcastFactory("28ish Days Later", "India Rakusen", "BBC Sounds", 28, 14)
+);
+podcasts.push(
+  podcastFactory(
+    "Ki & Dee: The Podcast",
+    "Chiara Hunter & Diana Vickers",
+    "Spotify",
+    14,
+    50
+  )
+);
+podcasts.push(
+  podcastFactory("Run Bambi Run", "Vanessa Grigoridas", "Spotify", 11, 35)
+);
+
+podcasts.push(
+  podcastFactory(
+    "The Antidote",
+    "Amy Aniobi & Grace Edwards",
+    "Spotify",
+    29,
+    50
+  )
+);
+
+podcasts.push(
+  podcastFactory(
+    "HeidiWorld: The Heidi Fleiss Story",
+    "iHeartPodcasts",
+    "Spotify",
+    10,
+    70
+  )
+);
+
+podcasts.push(
+  podcastFactory(
+    "Unreal: A Critical History of Reality TV",
+    "Pandora Sykes & Sirin Kale",
+    "BBC Sounds",
+    10,
+    52
+  )
+);
+
+podcasts.push(
+  podcastFactory("BEING Trans", "Pandora Sykes & Sirin Kale", "Spotify", 7, 58)
+);
+
+
+
+//populate series array
+const series = [];
+series.push(seriesFactory("Crossfire", "Drama", "BBC iPLayer", 3, 55));
+
 
