@@ -108,7 +108,7 @@ books.push(bookFactory("Celestial Bodies", "Jokha Alharthi", "Fiction", 243));
 
 books.push(
   bookFactory(
-    "Unthinkable: An Extraordinary Journey Through the Wprld's Strangest Brains",
+    "Unthinkable: An Extraordinary Journey Through the World's Strangest Brains",
     "Helen Thomson",
     "Science",
     265
@@ -202,3 +202,19 @@ podcasts.push(
 //populate series array
 const series = [];
 series.push(seriesFactory("Crossfire", "Drama", "BBC iPLayer", 3, 55));
+
+series.push(seriesFactory("Shetland", "Drama", "BBC iPLayer", 6, 57));
+
+series.push(seriesFactory("Marriage", "Drama", "BBC iPLayer", 4, 57));
+
+series.push(seriesFactory("The Control Room", "Drama", "BBC iPlayer", 3, 57));
+
+series.push(seriesFactory("The Handmaid's Tale", "Drama", "All 4", 10, 55));
+
+series.push(seriesFactory("Arctic Circle", "Drama", "All 4", 10, 42));
+
+series.push(seriesFactory("Nine Perfect Strangers", "Drama", "All 4", 6, 42));
+
+series.push(seriesFactory("Astrid, Murder in Paris", "Drama", "All 4", 6, 52));
+
+series.push(seriesFactory("Inventing Anna", "Drama", "Netflix", 9, 60));
