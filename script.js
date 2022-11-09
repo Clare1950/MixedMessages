@@ -74,7 +74,58 @@ books.push(
   )
 );
 
+books.push(
+  bookFactory(
+    "Manifesto: On Never Giving Up",
+    "Bernadine Evaristo",
+    "Biography",
+    190
+  )
+);
 
+books.push(
+  bookFactory("The Book of Form and Emptiness", "Ruth Ozeki", "Fiction", 546)
+);
+
+books.push(bookFactory("Shuggie Bain", "Douglas Stuart", "Fiction", 430));
+
+books.push(
+  bookFactory("The Marriage Portrait", "Maggie O'Farrell", "Fiction", 432)
+);
+
+books.push(bookFactory("The Glass Palace", "Amitav Ghosh", "Fiction", 547));
+
+books.push(
+  bookFactory(
+    "In Extremis: The life of a War Corespondant",
+    "Lindsey Hilsum",
+    "Biography",
+    375
+  )
+);
+
+books.push(bookFactory("Celestial Bodies", "Jokha Alharthi", "Fiction", 243));
+
+books.push(
+  bookFactory(
+    "Unthinkable: An Extraordinary Journey Through the Wprld's Strangest Brains",
+    "Helen Thomson",
+    "Science",
+    265
+  )
+);
+
+books.push(bookFactory("Ghana Must Go", "Taiye Selasi", "Fiction", 318));
+
+books.push(
+  bookFactory("A Long Petal of the Sea", "Isabel Allende", "Fiction", 314)
+);
+
+books.push(bookFactory("If it Bleeds", "Stephen King", "Fiction", 389));
+
+books.push(
+  bookFactory("The Architect's Apprentice", "Elif Shafak", "Fiction", 454)
+);
 //populate podcast array with podcasts
 let podcasts = [];
 podcasts.push(
@@ -148,10 +199,6 @@ podcasts.push(
   podcastFactory("BEING Trans", "Pandora Sykes & Sirin Kale", "Spotify", 7, 58)
 );
 
-
-
 //populate series array
 const series = [];
 series.push(seriesFactory("Crossfire", "Drama", "BBC iPLayer", 3, 55));
-
-
