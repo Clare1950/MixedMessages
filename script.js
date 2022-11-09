@@ -218,3 +218,17 @@ series.push(seriesFactory("Nine Perfect Strangers", "Drama", "All 4", 6, 42));
 series.push(seriesFactory("Astrid, Murder in Paris", "Drama", "All 4", 6, 52));
 
 series.push(seriesFactory("Inventing Anna", "Drama", "Netflix", 9, 60));
+
+// Create random number generator function
+
+const randomNumber = (arr) => {
+  return Math.floor(Math.random() * arr.length);
+};
+
+let mixedMessage = `This month you should: \n\n${series[
+  randomNumber(series)
+].seriesSummary()}\n\n${books[randomNumber(books)].bookSummary()}\n\n${podcasts[
+  randomNumber(podcasts)
+].podcastSummary()}`;
+
+console.log(mixedMessage);
