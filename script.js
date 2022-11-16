@@ -231,4 +231,13 @@ let mixedMessage = `This month you should: \n\n${series[
   randomNumber(podcasts)
 ].podcastSummary()}`;
 
-console.log(mixedMessage);
+let button = document.getElementById("userButton");
+let chosen = document.getElementById("chosen");
+
+function displayMessage() {
+  chosen.innerHTML = mixedMessage;
+  chosen.style.display = "block";
+  button.style.display = "none";
+}
+
+button.onclick = displayMessage;

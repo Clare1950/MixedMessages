@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fec260;
+  font-family: "Quicksand", sans-serif;
+}
+
+/*header and nav*/
+header {
+  background-color: #2a0944;
+  color: #efefef;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  margin: 0 0.5rem;
+}
+
+li a {
+  font-weight: bold;
+  color: #efefef;
+}
+
+/*main */
+
+main {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #a10035;
+  border-radius: 1rem;
+  padding: 2rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  color: #efefef;
+  font-weight: bold;
+}
+
+#chosen {
+  display: none;
+  background-color: #a10035;
+  font-size: 1.5rem;
+  color: #efefef;
+  font-weight: bold;
+  width: 60%;
+  padding: 2rem;
+  border-radius: 1rem;
+}
