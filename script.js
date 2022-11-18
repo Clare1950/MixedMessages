@@ -201,11 +201,11 @@ podcasts.push(
 
 //populate series array
 const series = [];
-series.push(seriesFactory("Crossfire", "Drama", "BBC iPLayer", 3, 55));
+series.push(seriesFactory("Crossfire", "Drama", "BBC iPlayer", 3, 55));
 
-series.push(seriesFactory("Shetland", "Drama", "BBC iPLayer", 6, 57));
+series.push(seriesFactory("Shetland", "Drama", "BBC iPlayer", 6, 57));
 
-series.push(seriesFactory("Marriage", "Drama", "BBC iPLayer", 4, 57));
+series.push(seriesFactory("Marriage", "Drama", "BBC iPlayer", 4, 57));
 
 series.push(seriesFactory("The Control Room", "Drama", "BBC iPlayer", 3, 57));
 
@@ -230,7 +230,7 @@ let resetButton = document.getElementById("resetButton");
 let chosen = document.getElementById("chosen");
 
 function displayMessage() {
-  let mixedMessage = `This month you should: \n\n${series[
+  let mixedMessage = `You should: \n\n${series[
     randomNumber(series)
   ].seriesSummary()}\n\n${books[
     randomNumber(books)

@@ -64,7 +64,6 @@ button:hover {
   width: 60%;
   padding: 2rem;
   border-radius: 1rem;
-  max-height: 70%;
 }
 
 #resetButton {
@@ -72,4 +71,11 @@ button:hover {
   padding: 1rem;
   background-color: green;
   margin: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+  #chosen {
+    font-size: 1rem;
+    width: 80%;
+  }
 }
