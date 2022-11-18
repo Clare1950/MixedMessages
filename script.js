@@ -225,19 +225,27 @@ const randomNumber = (arr) => {
   return Math.floor(Math.random() * arr.length);
 };
 
-let mixedMessage = `This month you should: \n\n${series[
-  randomNumber(series)
-].seriesSummary()}\n\n${books[randomNumber(books)].bookSummary()}\n\n${podcasts[
-  randomNumber(podcasts)
-].podcastSummary()}`;
-
-let button = document.getElementById("userButton");
+let userButton = document.getElementById("userButton");
+let resetButton = document.getElementById("resetButton");
 let chosen = document.getElementById("chosen");
 
 function displayMessage() {
+  let mixedMessage = `This month you should: \n\n${series[
+    randomNumber(series)
+  ].seriesSummary()}\n\n${books[
+    randomNumber(books)
+  ].bookSummary()}\n\n${podcasts[randomNumber(podcasts)].podcastSummary()}`;
   chosen.innerHTML = mixedMessage;
   chosen.style.display = "block";
-  button.style.display = "none";
+  userButton.style.display = "none";
+  resetButton.style.display = "block";
 }
 
-button.onclick = displayMessage;
+function reset() {
+  chosen.style.display = "none";
+  userButton.style.display = "block";
+  resetButton.style.display = "none";
+}
+
+userButton.addEventListener("click", displayMessage);
+resetButton.addEventListener("click", reset);
